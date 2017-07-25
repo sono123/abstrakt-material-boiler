@@ -135,30 +135,19 @@ code {
 /* Forms */
 
 .am-form-row {
-	/*margin-left: 0 !important;*/
-	/*margin-right: 0 !important;*/
 	margin-left: 0;
 	margin-right: 0;
   margin-bottom: 30px;
 }
 
 .form-control {
-  /*border-top: solid 3px #e0e0e0;*/
-  /*border-left: 2px solid #ececec;*/
-  /*border-right: 2px solid #ececec;*/
-  /*border-bottom: 2px solid #ececec;*/
-  /*border-top: solid 3px #e0e0e0;*/
-  /*border-left: 2px solid #e0e0e0;*/
-  /*border-right: 2px solid #e0e0e0;*/
-  /*border-bottom: 2px solid #e0e0e0;*/
-  /*background: #fbfbfb;*/
   border-top: solid 3px #e0e0e0;
   border-left: 2px solid #f6f6f6;
   border-right: 2px solid #f6f6f6;
   border-bottom: 2px solid #f6f6f6;
-  /*background: whitesmoke;*/
   background: rgba(208, 208, 208, 0.2);
   padding: 1rem .75rem;
+  /*padding: .75rem .75rem;*/
 }
 
 .form-control:focus {
@@ -194,25 +183,22 @@ code {
 }
 
 
-/*.am-form-check .form-check-input:after {
-  background: #7b7b7b;
-}*/
+.form-check-input {
+  opacity: 0;
+}
 
-/*[type="radio"]+label {
-    position: relative;
-    padding-left: 35px;
-    cursor: pointer;
-    display: inline-block;
-    height: 25px;
-    line-height: 25px;
-    font-size: 1rem;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}*/
 
-/*[type="radio"]+label:before, [type="radio"]:not(.filled-in)+label:after {
+.form-radio-label, .form-check-label {
+  padding-left: 2rem;
+  margin-bottom: .5rem;
+}
+
+.am-form-row select {
+  height: 3.5rem !important;
+}
+
+
+.form-radio-label:before {
     content: '';
     position: absolute;
     top: 0;
@@ -220,19 +206,11 @@ code {
     width: 18px;
     height: 18px;
     z-index: 0;
-    border: 2px solid #5a5a5a;
-    border-radius: 1px;
-    margin-top: 2px;
+    background: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 3px;
     -webkit-transition: .2s;
     transition: .2s;
-}*/
-
-.form-check-input {
-  opacity: 0;
-}
-
-.form-check-label {
-  padding-left: 2rem;
 }
 
 
@@ -241,20 +219,36 @@ code {
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 1px;
     width: 18px;
     height: 18px;
     z-index: 0;
-    /*border: 2px solid #cecece;*/
-    /*background: #fbfbfb;*/
-    /*background: #f6f6f6;*/
     background: #e0e0e0;
-    border-radius: 10px;
     margin-top: 3px;
     -webkit-transition: .2s;
     transition: .2s;
 }
 
-input[type="radio"]:checked ~ label.form-check-label:before {
+
+.form-check-label:after {
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  left: 4px;
+  top: 10px;
+  content: '';
+  position: absolute;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  /*transition: border .10s, background-color .10s, width .10s .1s, height .10s .1s, top .10s .1s, left .2s .1s;*/
+  z-index: 1;
+
+}
+
+
+input[type="radio"]:checked ~ label.form-radio-label:before {
     content: '';
     position: absolute;
     top: 0;
@@ -262,14 +256,51 @@ input[type="radio"]:checked ~ label.form-check-label:before {
     width: 18px;
     height: 18px;
     z-index: 0;
-    /*border: 2px solid #e0e0e0;*/
     border: none;
     background: #26a69a;
-    border-radius: 10px;
     margin-top: 3px;
     transition: background 0.25s linear;
     -webkit-transition: background 0.25s linear;
 }
+
+
+input[type="checkbox"]:checked ~ label.form-check-label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: none;
+    background: #26a69a;
+    margin-top: 3px;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+
+input[type="checkbox"]:checked ~ label.form-check-label:after {
+    top: 4px;
+    left: 1px;
+    width: 7px;
+    height: 12px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+
+
+
+
+
+
 
 
 
