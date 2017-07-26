@@ -182,11 +182,9 @@ code {
   margin-right: .5rem;
 }
 
-
 .form-check-input {
   opacity: 0;
 }
-
 
 .form-radio-label, .form-check-label {
   padding-left: 2rem;
@@ -249,53 +247,66 @@ code {
 
 
 input[type="radio"]:checked ~ label.form-radio-label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    z-index: 0;
-    border: none;
-    background: #26a69a;
-    margin-top: 3px;
-    transition: background 0.25s linear;
-    -webkit-transition: background 0.25s linear;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  border: none;
+  background: #26a69a;
+  margin-top: 3px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
 }
 
 
 input[type="checkbox"]:checked ~ label.form-check-label:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 18px;
-    height: 18px;
-    z-index: 0;
-    border: none;
-    background: #26a69a;
-    margin-top: 3px;
-    transition: background 0.25s linear;
-    -webkit-transition: background 0.25s linear;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 0;
+  border: none;
+  background: #26a69a;
+  margin-top: 3px;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
 }
 
 
 input[type="checkbox"]:checked ~ label.form-check-label:after {
-    top: 4px;
-    left: 1px;
-    width: 7px;
-    height: 12px;
-    border-top: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-right: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    -webkit-transform: rotateZ(37deg);
-    transform: rotateZ(37deg);
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
+  top: 4px;
+  left: 1px;
+  width: 7px;
+  height: 12px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  -webkit-transform: rotateZ(37deg);
+  transform: rotateZ(37deg);
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
 }
 
+.am-button {
+  margin-top: 30px;
+  color: white;
+  background: #26a69a;
+  border-radius: 3px;
+  border-bottom: solid 3px #24867d;
+  padding: 1rem 2rem .75rem;
+}
 
+.am-button:hover {
+  color: white;
+  background: #26988e;
+  border-bottom: solid 3px #22776f;
+}
 
 
 
