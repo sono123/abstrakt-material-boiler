@@ -308,6 +308,35 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
   border-bottom: solid 3px #22776f;
 }
 
+.am-file-input {
+  height: 4rem;
+}
+
+.am-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+
+.am-file-input:focus {
+  outline: none;
+}
+
+.am-file-input::before {
+  content: 'Choose File';
+  display: inline-block;
+  color: white;
+  background: #26a69a;
+  border-radius: 3px;
+  border-bottom: solid 3px #24867d;
+  padding: 1rem 2rem .75rem;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+
 
 
 
