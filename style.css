@@ -147,35 +147,46 @@ code {
   border-bottom: 2px solid #f6f6f6;
   background: rgba(208, 208, 208, 0.2);
   padding: 1rem .75rem;
-  /*padding: .75rem .75rem;*/
 }
 
 .form-control:focus {
-  color: #464a4c;
-  background-color: #fff;
-  border-top: solid 3px #b7b4b4;
-  border-left: 2px solid #b7b4b4;
-  border-right: 2px solid #b7b4b4;
-  border-bottom: 2px solid #b7b4b4;
+  color: #292b2c;
+  /*color: #464a4c;*/
+
+  /* bold border */
+  /*background: #f9f9f9;*/
+  /*border-top: solid 3px #afaeae;*/
+  /*border-left: 2px solid #afaeae;*/
+  /*border-right: 2px solid #afaeae;*/
+  /*border-bottom: 2px solid #afaeae;*/
+
+  /* top border */
+  background: #f6f6f6;
+  border-top: solid 3px #a7a6a6;
+  border-left: 2px solid #f6f6f6;
+  border-right: 2px solid #f6f6f6;
+  border-bottom: 2px solid #f6f6f6;
+
+  /* lighten slightly */
+  /*background: #fbfbfb;*/
+  /*border-top: solid 3px #a7a6a6;*/
+  /*border-left: 2px solid #fbfbfb;*/
+  /*border-right: 2px solid #fbfbfb;*/
+  /*border-bottom: 2px solid #fbfbfb;*/
   outline: 0;
-  background: #fbfbfb;
 }
 
 .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #c5c4c4;
-  /*font-weight: 100;*/
 }
 .form-control::-moz-placeholder { /* Firefox 19+ */
   color: #c5c4c4;
-  /*font-weight: 100;*/
 }
 .form-control:-ms-input-placeholder { /* IE 10+ */
   color: #c5c4c4;
-  /*font-weight: 100;*/
 }
 .form-control:-moz-placeholder { /* Firefox 18- */
   color: #c5c4c4;
-  /*font-weight: 100;*/
 }
 
 .am-form-check .form-check-input {
@@ -193,6 +204,14 @@ code {
 
 .am-form-row select {
   height: 3.5rem !important;
+}
+
+.am-form-row select:focus {
+  border-top: solid 3px #e0e0e0;
+  border-left: 2px solid #f6f6f6;
+  border-right: 2px solid #f6f6f6;
+  border-bottom: 2px solid #f6f6f6;
+  background: rgba(208, 208, 208, 0.2);
 }
 
 
@@ -240,7 +259,6 @@ code {
   transform: rotateZ(37deg);
   -webkit-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
-  /*transition: border .10s, background-color .10s, width .10s .1s, height .10s .1s, top .10s .1s, left .2s .1s;*/
   z-index: 1;
 
 }
