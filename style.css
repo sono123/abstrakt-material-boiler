@@ -17,9 +17,15 @@ nav {
 }
 
 .navbar {
-  padding: .75rem 1rem;
+  /*padding: .75rem 1rem;*/
+  padding: .35rem 1rem;
   font-family: Roboto;
   font-weight: 500;
+}
+
+.navbar-brand {
+  padding-top: 5px;
+  padding-bottom: 0;
 }
 
 
@@ -86,6 +92,14 @@ code {
 
 .m-bottom-30 {
   margin-bottom: 30px !important;
+}
+
+.m-top-45 {
+  margin-top: 45px !important;
+}
+
+.m-bottom-45 {
+  margin-bottom: 45px !important;
 }
 
 .m-top-60 {
@@ -399,6 +413,61 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
   border: solid 1px #efefef;
   border-bottom: solid 3px #e0e0e0;
 }
+
+
+#homepage-bg {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2fbaa9+0,26a69a+100 */
+  background: #2fbaa9; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #2fbaa9 0%, #26a69a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #2fbaa9 0%,#26a69a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #2fbaa9 0%,#26a69a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2fbaa9', endColorstr='#26a69a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#homepage-header {
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.homepage-description {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+#disclaimer-note {
+  color: #1f6e66;
+  margin-top: 2rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.action-buttons {
+  background: #08877b;
+  border: none;
+  border-bottom: solid 3px #1d6f67;
+  margin-top: 1rem;
+}
+
+.action-buttons:hover {
+  background: #07776c;
+  border-bottom: solid 3px #115851;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
