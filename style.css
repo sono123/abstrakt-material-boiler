@@ -438,7 +438,8 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
 }
 
 #disclaimer-note {
-  color: #1f6e66;
+  /*color: #1f6e66;*/
+  color: #FFC107;
   margin-top: 2rem;
   font-weight: 100;
   font-style: italic;
@@ -454,6 +455,18 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
 .action-buttons:hover {
   background: #07776c;
   border-bottom: solid 3px #115851;
+}
+
+
+#abstract-icon {
+  width: 55%;
+  margin-left: 22.5%;
+  padding-top: 20%;
+  padding-bottom: 25.5%;
+}
+
+#intro-illustrations-container {
+  padding-top: 1rem;
 }
 
 
