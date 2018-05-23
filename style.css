@@ -183,6 +183,16 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
 }
 
+.am-card-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.am-card-content {
+  /*margin-top: 0.5rem;*/
+  margin-bottom: 0;
+  font-size: .9rem;
+}
 
 /* Forms */
 
@@ -417,6 +427,16 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
   border-radius: 3px;
   border: solid 1px #efefef;
   border-bottom: solid 3px #e0e0e0;
+}
+
+.am-panel img {
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.am-panel .am-button {
+  margin-top: 0.5rem;
 }
 
 
