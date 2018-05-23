@@ -110,6 +110,10 @@ code {
   margin-bottom: 60px !important;
 }
 
+.m-bottom-90 {
+  margin-bottom: 90px !important;
+}
+
 /* Padding */
 
 .no-padding {
@@ -360,6 +364,7 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
 }
 
 .am-button {
+  border: none;
   margin-top: 30px;
   color: white;
   background: #26a69a;
@@ -458,20 +463,48 @@ input[type="checkbox"]:checked ~ label.form-check-label:after {
 }
 
 
+#material-icon {
+  width: 85%;
+  margin-bottom: 10%;
+  margin-left: 19%;
+}
+
+#material-icon, #abstrakt-material-icon {
+  width: 85%;
+  margin-top: 0.5%;
+  margin-bottom: 10%;
+  margin-left: 19%;
+}
+
 #abstract-icon {
   width: 55%;
   margin-left: 22.5%;
-  padding-top: 20%;
+  padding-top: 15%;
   padding-bottom: 25.5%;
 }
 
+
 #intro-illustrations-container {
   padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
+#version {
+  font-weight: 300;
+  font-style: italic;
+  /*color: #1f6e66;*/
+}
 
+.code-highlight {
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+}
 
+.code-highlight pre {
+  margin-bottom: 0;
+}
 
 
 

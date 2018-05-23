@@ -57,6 +57,7 @@
 
           <div class="col-sm-12 col-md-6">
             <h5 class="col-sm-12" id="homepage-header">Abstrakt Material</h5>
+            <p id="version" class="col-sm-12"><span>Version:</span> 0.0.1</p>
             <p class="homepage-description col-sm-12">Abstrakt Material is a bootstrap extention that combines aspects of Material design and Abstract design.</p>
             <p class="homepage-description col-sm-12">This library rides on top of the Bootstrap 4 front-end library.</p>
             <div class="col-sm-12">
@@ -75,7 +76,7 @@
 
     <div class="container">
       <h1 class="">Introduction</h1>
-      <p>Abstrakt Material is a design style that combines elements from Material Design and Abstract Design. As you can see below, both Material and Abstract styles have their own approach to shadows and dimensions. Abstrakt Material takes aspects from both.</p>
+      <p>Abstrakt Material is a design style that combines elements from Material Design and Abstract Design. As you can see below, both Material and Abstract styles have their own approach to shadows and dimensions. Abstrakt Material takes aspects from both, resulting in a flat design language that incorporates some degree of shadows and dimension.</p>
     </div>
 
     <div id="intro-illustrations-container" class="container-fluid" style="background: #f7f7f7;">
@@ -85,7 +86,7 @@
           <div class="col-sm-12 col-md-4 am-panel-wrapper">
             <div class="am-panel white">
               <p class="text-center">Material Design</p>
-              <img src="images/material-design.png" style="width:100%;">
+              <img id="material-icon" src="images/material-design.png">
             </div>
           </div>
 
@@ -99,18 +100,401 @@
           <div class="col-sm-12 col-md-4 am-panel-wrapper">
             <div class="am-panel white">
               <p class="text-center">Abstrakt Material</p>
-              <img src="images/abstrakt.png" style="width:100%;">
+              <img id="abstrakt-material-icon" src="images/abstrakt.png">
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <div class="container">
+      <p>Abstrakt Material is strictly a styling add-on. The grid system and layout is entirely Bootstrap 4. The focus of this library is to keep the amount of code as minimal as possible, meaning most of the styles apply to Forms, Buttons and Cards. Furthermore, some of the classes are designed to coexist with Bootstrap 4 classes, not replace them.</p>
+    </div>
+
+
 
     <div class="container">
-      <h1 class="">Introduction</h1>
-      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy <code>this is inline code</code> direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
+      <h1 class="">Getting Started</h1>
+      <p class="m-bottom-30">The easiest way to use Abstrakt Material is to use the CDN by including the following line of code in the head of your document. Make sure this library is included after Bootstrap in your application.</p>
+      <figure class="highlight code-highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"</span> <span class="na">integrity=</span><span class="s">"sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"</span> <span class="na">crossorigin=</span><span class="s">"anonymous"</span><span class="nt">&gt;</span></code></pre></figure>
+      <button class="am-button">copy</button>
     </div>
+
+
+    <div class="container">
+      <h1 class="">Forms</h1>
+      <p>On forms, Abstrakt Material styles are limited to text inputs, textareas, select tags, radio inputs and checkboxes. Buttons are styled as well, however they do not need to be inside of a form. The example below is broken into individual elements further down the page.</p>
+      <h5 class="m-top-60">Example Form</h5>
+    </div>
+
+
+    <div class="container no-padding">
+      <form>
+        <!-- Text Inputs -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12 col-md-6">
+            <label for="inputEmail3" class="">Email</label>
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <label for="inputEmail3" class="">Username</label>
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Username">
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <label for="exampleTextarea">Example textarea</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <label for="exampleTextarea">Another textarea</label>
+            <textarea class="form-control" id="exampleTextarea" rows="10" placeholder="Textarea"></textarea>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <!-- Radio Inputs -->
+          <div class="col-sm-12 col-md-6">
+            <div class="form-group row am-form-row">
+              <div class="col-sm-12">
+                <div class="form-check am-form-check">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="radio-one" value="option1" checked>
+                  <label for="radio-one" class="form-radio-label">Radio 1</label>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-check am-form-check">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="radio-two" value="option2">
+                  <label for="radio-two" class="form-radio-label">Radio 2</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Checkboxes -->
+          <div class="col-sm-12 col-md-6">
+            <div class="form-group row am-form-row">
+              <div class="col-sm-12">
+                <div class="form-check am-form-check">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-one" value="option1" checked>
+                  <label for="checkbox-one" class="form-check-label">Checkbox 1</label>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="form-check am-form-check">
+                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-two" value="option2">
+                  <label for="checkbox-two" class="form-check-label">Checkbox 2</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <br>
+
+        <!-- Select Tag -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12 col-md-6">
+            <label for="exampleSelect1">Example select</label>
+
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+
+          <div class="col-sm-12 col-md-6">
+            <label for="exampleSelect1">Example select</label>
+
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Text Input -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <label for="inputEmail3" class="">Email</label>
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+          </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <button type="submit" class="btn am-button">Submit</button>
+          </div>
+        </div>
+
+        <!-- File Field -->
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" class="form-control-file am-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text.</small>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+
+    <div class="container">
+      <div class="row m-bottom-90">
+        <h5 class="col-12">Inputs</h5>
+        <p class="col-12 m-bottom-30">For text input styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;form&gt;
+  &lt;div class="form-group row am-form-row"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="email" placeholder="Email"&gt;
+  &lt;/div&gt;
+&lt;form&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <label for="email" class="">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row m-bottom-90">
+        <h5 class="col-12">Select Tags</h5>
+        <p class="col-12 m-bottom-30">For select input styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;form&gt;
+  &lt;div class="form-group row am-form-row"&gt;
+    &lt;label for="example-selet"&gt;Select&lt;/label&gt;
+    &lt;select class="form-control" id="example-select&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;selectt&gt;
+  &lt;/div&gt;
+&lt;form&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <label for="exampleSelect1">Select</label>
+
+              <select class="form-control" id="exampleSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row m-bottom-90">
+        <h5 class="col-12">Textareas</h5>
+        <p class="col-12 m-bottom-30">For textarea styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;form&gt;
+  &lt;div class="form-group row am-form-row"&gt;
+    &lt;label for="email"&gt;Email&lt;/label&gt;
+    &lt;textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Textarea"&gt;
+  &lt;/div&gt;
+&lt;form&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <label for="textarea-ex" class="">Textarea</label>
+               <textarea class="form-control" id="textarea-ex" rows="3" placeholder="Textarea"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row m-bottom-90">
+        <h5 class="col-12">Radio Buttons</h5>
+        <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;form&gt;
+  &lt;div class="form-group row am-form-row"&gt;
+    &lt;div class="col-sm-12"&gt;
+      &lt;div class="form-check am-form-check"&gt;
+        &lt;input type="radio" class="form-check-input" name="optionsRadios" id="radio-one" value="option1" checked&gt;
+        &lt;label for="radio-one" class="form-radio-label"&gt;Radio 1&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-12"&gt;
+      &lt;div class="form-check am-form-check"&gt;
+        &lt;input type="radio" class="form-check-input" name="optionsRadios" id="radio-one" value="option1" checked&gt;
+        &lt;label for="radio-one" class="form-radio-label"&gt;Radio 1&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;form&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <p style="margin-bottom:0.5rem;">Radio Buttons</p>
+              <div class="form-check am-form-check">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="radio-1" value="option1" checked>
+                <label for="radio-1" class="form-radio-label">Radio 1</label>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="form-check am-form-check">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="radio-2" value="option2">
+                <label for="radio-2" class="form-radio-label">Radio 2</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row m-bottom-90">
+        <h5 class="col-12">Checkboxes</h5>
+        <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;form&gt;
+  &lt;div class="form-group row am-form-row"&gt;
+    &lt;div class="col-sm-12"&gt;
+      &lt;div class="form-check am-form-check"&gt;
+        &lt;input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-1" value="option1" checked&gt;
+        &lt;label for="checkbox-1" class="form-check-label"&gt;Checkbox 1&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-sm-12"&gt;
+      &lt;div class="form-check am-form-check"&gt;
+        &lt;input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-2" value="option2"&gt;
+        &lt;label for="checkbox-2" class="form-check-label"&gt;Checkbox 2&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;form&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <p style="margin-bottom:0.5rem;">Checkboxes</p>
+              <div class="form-check am-form-check">
+                <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-1" value="option1" checked>
+                <label for="checkbox-1" class="form-check-label">Checkbox 1</label>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="form-check am-form-check">
+                <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-2" value="option2">
+                <label for="checkbox-2" class="form-check-label">Checkbox 2</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-bottom-90">
+        <h5 class="col-12">Buttons</h5>
+        <p class="col-12 m-bottom-30">For button styles, add the class <code>.am-button</code>. to a button element. Unlike all other form element styles, button styles are accessible outside of forms elements just by adding the aforementioned class to a button element.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;div class="col-sm-12"&gt;
+  &lt;button type="submit" class="btn am-button"&gt;Submit&lt;/Button&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <p style="margin-bottom:0.5rem;">Buttons</p>
+              <button type="submit" class="btn am-button no-margin">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row m-bottom-90">
+        <h5 class="col-12">File Fields</h5>
+        <p class="col-12 m-bottom-30">For file field styles, make sure your input element has the classes <code>.form-control-file .am-file-input</code>, and is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+        <div class="col-sm-12 col-md-6">
+        <p style="margin-bottom:0.5rem;">Code</p>
+        <pre class="code-highlight"><code>&lt;form&gt;
+  &lt;div class="form-group row am-form-row"&gt;
+    &lt;label for="exampleInputFile"&gt;File Field&lt;/label&gt;
+    &lt;input type="file" class="form-control-file am-file-input" id="exampleInputFile" aria-describedby="fileHelp""&gt;
+    &lt;small id="fileHelp" class="form-text text-muted"&gt;Block level help text.&lt;/small&gt;
+  &lt;/div&gt;
+&lt;form&gt;
+</code></pre>
+      </div>
+
+        <div class="col-sm-12 col-md-6">
+          <div class="form-group row am-form-row">
+            <div class="col-sm-12">
+              <label for="exampleInputFile">File Field</label>
+              <input type="file" class="form-control-file am-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+              <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+
+
+
+
+    <div class="container">
+      <h1 class="">Cards</h1>
+      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial.</p>
+    </div>
+
 
     <div class="container-fluid" style="background: #f7f7f7;">
       <div class="container">
@@ -133,8 +517,37 @@
               <p>test</p>
             </div>
           </div>
+
+          <div class="col-sm-12 col-md-4 am-panel-wrapper">
+            <div class="am-panel white">
+              <p>test</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 am-panel-wrapper">
+            <div class="am-panel white">
+              <p>test</p>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-md-4 am-panel-wrapper">
+            <div class="am-panel white">
+              <p>test</p>
+            </div>
+          </div>
+
         </div>
       </div>
+    </div>
+
+
+
+
+
+
+    <div class="container">
+      <h1 class="">Introduction</h1>
+      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy <code>this is inline code</code> direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
     </div>
 
     <div class="container-fluid" style="background: #f7f7f7;">
