@@ -6,16 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-     <!-- Google Fonts -->
-     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab" rel="stylesheet">
   </head>
 
   <body>
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav> -->
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+      <img src="images/am-logo.svg" height="45">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Documentation
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#forms">Forms</a>
+            <a class="dropdown-item" href="#input-wrapper">Inputs</a>
+            <a class="dropdown-item" href="#select-wrapper">Selects</a>
+            <a class="dropdown-item" href="#textarea-wrapper">Textareas</a>
+            <a class="dropdown-item" href="#radio-wrapper">Radio Buttons</a>
+            <a class="dropdown-item" href="#checkbox-wrapper">Checkboxes</a>
+            <a class="dropdown-item" href="#button-wrapper">Buttons</a>
+            <a class="dropdown-item" href="#filefield-wrapper">File Fields</a>
+            <a class="dropdown-item" href="#panels">Panels</a>
+            <a class="dropdown-item" href="#images">Images</a>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Examples</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
     <!-- Main Navitation -->
-    <nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
+    <!-- <nav class="navbar navbar-toggleable-md navbar-light fixed-top bg-faded">
       <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,7 +123,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- Homepage Background Image -->
     <div id="homepage-bg" class="container-fluid p-bottom-30">
@@ -126,7 +204,7 @@
 
 
     <!-- Forms Documentation -->
-    <div class="container">
+    <div id="forms" class="container">
       <h1 class="">Forms</h1>
       <p>On forms, Abstrakt Material styles are limited to text inputs, textareas, select tags, radio inputs and checkboxes. Buttons are styled as well, however they do not need to be inside of a form. The example below is broken into individual elements further down the page.</p>
       <h5 class="m-top-60">Example Form</h5>
@@ -230,7 +308,7 @@
 
 
     <!-- Input Documentation -->
-    <div class="container">
+    <div id="input-wrapper" class="container">
       <div class="row m-bottom-90">
         <h5 class="col-12">Inputs</h5>
         <p class="col-12 m-bottom-30">For text input styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
@@ -257,7 +335,7 @@
 
 
       <!-- Select Tag Documentation -->
-      <div class="row m-bottom-90">
+      <div id="select-wrapper" class="row m-bottom-90">
         <h5 class="col-12">Select Tags</h5>
         <p class="col-12 m-bottom-30">For select input styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
         <div class="col-sm-12 col-md-6">
@@ -296,7 +374,7 @@
 
 
       <!-- Textarea Documentation -->
-      <div class="row m-bottom-90">
+      <div id="textarea-wrapper" class="row m-bottom-90">
         <h5 class="col-12">Textareas</h5>
         <p class="col-12 m-bottom-30">For textarea styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
         <div class="col-sm-12 col-md-6">
@@ -322,7 +400,7 @@
 
 
       <!-- Radio Button Documentation -->
-      <div class="row m-bottom-90">
+      <div id="radio-wrapper" class="row m-bottom-90">
         <h5 class="col-12">Radio Buttons</h5>
         <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
         <div class="col-sm-12 col-md-6">
@@ -369,7 +447,7 @@
 
 
     <!-- Checkbox Documentation -->
-    <div class="row m-bottom-90">
+    <div id="checkbox-wrapper" class="row m-bottom-90">
       <h5 class="col-12">Checkboxes</h5>
       <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
       <div class="col-sm-12 col-md-6">
@@ -415,7 +493,7 @@
 
 
     <!-- Button Documentation -->
-    <div class="row m-bottom-90">
+    <div id="button-wrapper" class="row m-bottom-90">
       <h5 class="col-12">Buttons</h5>
       <p class="col-12 m-bottom-30">For button styles, add the class <code>.am-button</code>. to a button element. Unlike all other form element styles, button styles are accessible outside of forms elements just by adding the aforementioned class to a button element.</p>
       <div class="col-sm-12 col-md-6">
@@ -437,7 +515,7 @@
     </div>
 
     <!-- File Field Documentation -->
-    <div class="row">
+    <div id="filefield-wrapper" class="row">
       <h5 class="col-12">File Fields</h5>
       <p class="col-12 m-bottom-30">For file field styles, make sure your input element has the classes <code>.form-control-file .am-file-input</code>, and is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
       <div class="col-sm-12 col-md-6">
@@ -469,7 +547,7 @@
 
 
   <!-- Panel Documentation -->
-  <div class="container">
+  <div id="panels" class="container">
     <h1 class="">Panels</h1>
     <p>A panel is essentially the same as a card.  Panels are flexible and extensible content containers. Although Bootstrap already has cards within its library, Abstrakt Material has its own unique style and format, which can be used as an alternative to Bootstrap cards.</p>
   </div>
@@ -612,7 +690,7 @@
 
 
   <!-- Images Documentation -->
-  <div class="container">
+  <div id="images" class="container">
     <h1 class="">Images</h1>
     <p class="m-bottom-60">Abstrakt Matarial adds styles to images which do not adversely interact with Bootstrap 4 native image styles. Essentially, the only style change that occurs is the addition of an abstract style of shadow below the image.</p>
 
@@ -664,9 +742,9 @@
     </footer>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>
 
