@@ -47,11 +47,11 @@
       </div>
     </nav>
 
+    <!-- Homepage Background Image -->
     <div id="homepage-bg" class="container-fluid p-bottom-30">
       <div class="container">
         <div class="row m-top-45">
           <div class="col-sm-12 col-md-6">
-            <!-- <img src="images/am-main-image.svg"> -->
             <img src="images/am-main-image-rev.svg">
           </div>
 
@@ -74,11 +74,15 @@
       </div>
     </div>
 
+
+    <!-- Introduction Text -->
     <div class="container">
       <h1 class="">Introduction</h1>
       <p>Abstrakt Material is a design style that combines elements from Material Design and Abstract Design. As you can see below, both Material and Abstract styles have their own approach to shadows and dimensions. Abstrakt Material takes aspects from both, resulting in a flat design language that incorporates some degree of shadows and dimension.</p>
     </div>
 
+
+    <!-- Introduction Illustrations -->
     <div id="intro-illustrations-container" class="container-fluid" style="background: #f7f7f7;">
       <div class="container">
         <div class="row">
@@ -93,7 +97,7 @@
           <div class="col-sm-12 col-md-4 am-panel-wrapper">
             <div class="am-panel white">
               <p class="text-center">Abstract Design</p>
-              <img id="abstract-icon" src="images/basic-icon.svg">
+              <img id="abstract-icon" src="images/basic-icon.svg" style="margin-top:0;margin-bottom:0;">
             </div>
           </div>
 
@@ -112,7 +116,7 @@
     </div>
 
 
-
+    <!-- Getting Started -->
     <div class="container">
       <h1 class="">Getting Started</h1>
       <p class="m-bottom-30">The easiest way to use Abstrakt Material is to use the CDN by including the following line of code in the head of your document. Make sure this library is included after Bootstrap in your application.</p>
@@ -121,6 +125,7 @@
     </div>
 
 
+    <!-- Forms Documentation -->
     <div class="container">
       <h1 class="">Forms</h1>
       <p>On forms, Abstrakt Material styles are limited to text inputs, textareas, select tags, radio inputs and checkboxes. Buttons are styled as well, however they do not need to be inside of a form. The example below is broken into individual elements further down the page.</p>
@@ -224,7 +229,7 @@
     </div>
 
 
-
+    <!-- Input Documentation -->
     <div class="container">
       <div class="row m-bottom-90">
         <h5 class="col-12">Inputs</h5>
@@ -251,6 +256,7 @@
       </div>
 
 
+      <!-- Select Tag Documentation -->
       <div class="row m-bottom-90">
         <h5 class="col-12">Select Tags</h5>
         <p class="col-12 m-bottom-30">For select input styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
@@ -289,6 +295,7 @@
       </div>
 
 
+      <!-- Textarea Documentation -->
       <div class="row m-bottom-90">
         <h5 class="col-12">Textareas</h5>
         <p class="col-12 m-bottom-30">For textarea styles, make sure your input element is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
@@ -314,6 +321,7 @@
       </div>
 
 
+      <!-- Radio Button Documentation -->
       <div class="row m-bottom-90">
         <h5 class="col-12">Radio Buttons</h5>
         <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
@@ -338,33 +346,35 @@
 </code></pre>
       </div>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="form-group row am-form-row">
-            <div class="col-sm-12">
-              <p style="margin-bottom:0.5rem;">Radio Buttons</p>
-              <div class="form-check am-form-check">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="radio-1" value="option1" checked>
-                <label for="radio-1" class="form-radio-label">Radio 1</label>
-              </div>
-            </div>
 
-            <div class="col-sm-12">
-              <div class="form-check am-form-check">
-                <input type="radio" class="form-check-input" name="optionsRadios" id="radio-2" value="option2">
-                <label for="radio-2" class="form-radio-label">Radio 2</label>
-              </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <p style="margin-bottom:0.5rem;">Radio Buttons</p>
+            <div class="form-check am-form-check">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="radio-1" value="option1" checked>
+              <label for="radio-1" class="form-radio-label">Radio 1</label>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="form-check am-form-check">
+              <input type="radio" class="form-check-input" name="optionsRadios" id="radio-2" value="option2">
+              <label for="radio-2" class="form-radio-label">Radio 2</label>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
 
-      <div class="row m-bottom-90">
-        <h5 class="col-12">Checkboxes</h5>
-        <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
-        <div class="col-sm-12 col-md-6">
-        <p style="margin-bottom:0.5rem;">Code</p>
-        <pre class="code-highlight"><code>&lt;form&gt;
+    <!-- Checkbox Documentation -->
+    <div class="row m-bottom-90">
+      <h5 class="col-12">Checkboxes</h5>
+      <p class="col-12 m-bottom-30">For radio button styles, add the class <code>.form-check-input</code> to the input element. Add a wrapper around the input element with the classes <code>.form-check .am-form-check</code>. Finally, both aforementioned elements should be placed inside an element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+      <div class="col-sm-12 col-md-6">
+      <p style="margin-bottom:0.5rem;">Code</p>
+      <pre class="code-highlight"><code>&lt;form&gt;
   &lt;div class="form-group row am-form-row"&gt;
     &lt;div class="col-sm-12"&gt;
       &lt;div class="form-check am-form-check"&gt;
@@ -383,54 +393,56 @@
 </code></pre>
       </div>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="form-group row am-form-row">
-            <div class="col-sm-12">
-              <p style="margin-bottom:0.5rem;">Checkboxes</p>
-              <div class="form-check am-form-check">
-                <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-1" value="option1" checked>
-                <label for="checkbox-1" class="form-check-label">Checkbox 1</label>
-              </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <p style="margin-bottom:0.5rem;">Checkboxes</p>
+            <div class="form-check am-form-check">
+              <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-1" value="option1" checked>
+              <label for="checkbox-1" class="form-check-label">Checkbox 1</label>
             </div>
+          </div>
 
-            <div class="col-sm-12">
-              <div class="form-check am-form-check">
-                <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-2" value="option2">
-                <label for="checkbox-2" class="form-check-label">Checkbox 2</label>
-              </div>
+          <div class="col-sm-12">
+            <div class="form-check am-form-check">
+              <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-2" value="option2">
+              <label for="checkbox-2" class="form-check-label">Checkbox 2</label>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row m-bottom-90">
-        <h5 class="col-12">Buttons</h5>
-        <p class="col-12 m-bottom-30">For button styles, add the class <code>.am-button</code>. to a button element. Unlike all other form element styles, button styles are accessible outside of forms elements just by adding the aforementioned class to a button element.</p>
-        <div class="col-sm-12 col-md-6">
-        <p style="margin-bottom:0.5rem;">Code</p>
-        <pre class="code-highlight"><code>&lt;div class="col-sm-12"&gt;
+
+    <!-- Button Documentation -->
+    <div class="row m-bottom-90">
+      <h5 class="col-12">Buttons</h5>
+      <p class="col-12 m-bottom-30">For button styles, add the class <code>.am-button</code>. to a button element. Unlike all other form element styles, button styles are accessible outside of forms elements just by adding the aforementioned class to a button element.</p>
+      <div class="col-sm-12 col-md-6">
+      <p style="margin-bottom:0.5rem;">Code</p>
+      <pre class="code-highlight"><code>&lt;div class="col-sm-12"&gt;
   &lt;button type="submit" class="btn am-button"&gt;Submit&lt;/Button&gt;
 &lt;/div&gt;
 </code></pre>
       </div>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="form-group row am-form-row">
-            <div class="col-sm-12">
-              <p style="margin-bottom:0.5rem;">Buttons</p>
-              <button type="submit" class="btn am-button no-margin">Submit</button>
-            </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="form-group row am-form-row">
+          <div class="col-sm-12">
+            <p style="margin-bottom:0.5rem;">Buttons</p>
+            <button type="submit" class="btn am-button no-margin">Submit</button>
           </div>
         </div>
       </div>
+    </div>
 
-
-      <div class="row">
-        <h5 class="col-12">File Fields</h5>
-        <p class="col-12 m-bottom-30">For file field styles, make sure your input element has the classes <code>.form-control-file .am-file-input</code>, and is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
-        <div class="col-sm-12 col-md-6">
-        <p style="margin-bottom:0.5rem;">Code</p>
-        <pre class="code-highlight"><code>&lt;form&gt;
+    <!-- File Field Documentation -->
+    <div class="row">
+      <h5 class="col-12">File Fields</h5>
+      <p class="col-12 m-bottom-30">For file field styles, make sure your input element has the classes <code>.form-control-file .am-file-input</code>, and is wrapped inside of a parent element with the classes <code>.form-group .row .am-form-row</code>. Also, the styling will not work consistently unless the aforementioned elements are located inside of a form.</p>
+      <div class="col-sm-12 col-md-6">
+      <p style="margin-bottom:0.5rem;">Code</p>
+      <pre class="code-highlight"><code>&lt;form&gt;
   &lt;div class="form-group row am-form-row"&gt;
     &lt;label for="exampleInputFile"&gt;File Field&lt;/label&gt;
     &lt;input type="file" class="form-control-file am-file-input" id="exampleInputFile" aria-describedby="fileHelp""&gt;
@@ -440,369 +452,206 @@
 </code></pre>
       </div>
 
-        <div class="col-sm-12 col-md-6">
-          <div class="form-group row am-form-row">
-            <div class="col-sm-12">
-              <label for="exampleInputFile">File Field</label>
-              <input type="file" class="form-control-file am-file-input" id="exampleInputFile" aria-describedby="fileHelp">
-              <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text.</small>
-            </div>
-          </div>
-        </div>
-      </div>  
-      
-    </div>
-
-
-
-
-
-    <div class="container">
-      <h1 class="">Cards</h1>
-      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial.</p>
-    </div>
-
-
-    <div class="container-fluid" style="background: #f7f7f7;">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/animals">
-              <p class="am-card-content">Card content goes here.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/nature">
-              <p class="am-card-content">Card content goes here.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/animals">
-              <p class="am-card-content">Card content goes here.</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/nature">
-              <button class="am-button">Button</button>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-6 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/animals">
-              <button class="am-button">Button</button>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/nature">
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/animals">
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/nature">
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-3 am-panel-wrapper">
-            <div class="am-panel white">
-              <h5 class="am-card-title">Card Title</h5>
-              <img src="https://placeimg.com/450/300/animals">
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-    <div class="container">
-      <h1 class="">Introduction</h1>
-      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy <code>this is inline code</code> direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
-    </div>
-
-    <div class="container-fluid" style="background: #f7f7f7;">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
-    </div>
-
-    <div class="container no-padding">
-      <form>
-
-        <!-- Text Inputs -->
-        <div class="form-group row am-form-row">
-          <div class="col-sm-12 col-md-6">
-            <label for="inputEmail3" class="">Email</label>
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-          </div>
-
-          <div class="col-sm-12 col-md-6">
-            <label for="inputEmail3" class="">Username</label>
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Username">
-          </div>
-        </div>
-
-        <!-- Textarea -->
+      <div class="col-sm-12 col-md-6">
         <div class="form-group row am-form-row">
           <div class="col-sm-12">
-            <label for="exampleTextarea">Example textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-
-        <!-- Textarea -->
-        <div class="form-group row am-form-row">
-          <div class="col-sm-12">
-            <label for="exampleTextarea">Another textarea</label>
-            <textarea class="form-control" id="exampleTextarea" rows="10" placeholder="Textarea"></textarea>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="row">
-          <!-- Radio Inputs -->
-          <div class="col-sm-12 col-md-6">
-            <div class="form-group row am-form-row">
-              <div class="col-sm-12">
-                <div class="form-check am-form-check">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="radio-one" value="option1" checked>
-                  <label for="radio-one" class="form-radio-label">Radio 1</label>
-                </div>
-              </div>
-
-              <div class="col-sm-12">
-                <div class="form-check am-form-check">
-                  <input type="radio" class="form-check-input" name="optionsRadios" id="radio-two" value="option2">
-                  <label for="radio-two" class="form-radio-label">Radio 2</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Checkboxes -->
-          <div class="col-sm-12 col-md-6">
-            <div class="form-group row am-form-row">
-              <div class="col-sm-12">
-                <div class="form-check am-form-check">
-                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-one" value="option1" checked>
-                  <label for="checkbox-one" class="form-check-label">Checkbox 1</label>
-                </div>
-              </div>
-
-              <div class="col-sm-12">
-                <div class="form-check am-form-check">
-                  <input type="checkbox" class="form-check-input" name="optionsRadios" id="checkbox-two" value="option2">
-                  <label for="checkbox-two" class="form-check-label">Checkbox 2</label>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br>
-
-        <!-- Select Tag -->
-        <div class="form-group row am-form-row">
-          <div class="col-sm-12 col-md-6">
-            <label for="exampleSelect1">Example select</label>
-
-            <select class="form-control" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-
-          <div class="col-sm-12 col-md-6">
-            <label for="exampleSelect1">Example select</label>
-
-            <select class="form-control" id="exampleSelect1">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Text Input -->
-        <div class="form-group row am-form-row">
-          <div class="col-sm-12">
-            <label for="inputEmail3" class="">Email</label>
-            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-          </div>
-        </div>
-
-        <!-- Button -->
-        <div class="form-group row am-form-row">
-          <div class="col-sm-12">
-            <button type="submit" class="btn am-button">Submit</button>
-          </div>
-        </div>
-
-        <!-- File Field -->
-        <div class="form-group row am-form-row">
-          <div class="col-sm-12">
-            <label for="exampleInputFile">File input</label>
+            <label for="exampleInputFile">File Field</label>
             <input type="file" class="form-control-file am-file-input" id="exampleInputFile" aria-describedby="fileHelp">
             <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text.</small>
           </div>
         </div>
-        <!-- https://css-tricks.com/snippets/css/custom-file-input-styling-webkitblink/ -->
-        <!-- http://jsfiddle.net/sheriffderek/hAnL5/ -->
-            
+      </div>
+    </div>  
+      
+  </div>
 
-      </form>
-    </div>
 
-    <div class="container">
-      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
-    </div>
 
+
+  <!-- Panel Documentation -->
+  <div class="container">
+    <h1 class="">Panels</h1>
+    <p>A panel is essentially the same as a card.  Panels are flexible and extensible content containers. Although Bootstrap already has cards within its library, Abstrakt Material has its own unique style and format, which can be used as an alternative to Bootstrap cards.</p>
+  </div>
+
+
+  <div class="container-fluid" style="background: #f7f7f7;">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <img src="http://via.placeholder.com/450x300" class="am-image">
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/animals">
+            <p class="am-card-content">Panel content goes here.</p>
+          </div>
         </div>
 
-        <div class="col-sm-12 col-md-4">
-          <img src="https://placeimg.com/450/300/nature" class="am-image">
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/nature">
+            <p class="am-card-content">Panel content goes here.</p>
+          </div>
         </div>
 
-        <div class="col-sm-12 col-md-4">
-          <img src="https://placeimg.com/450/300/animals" class="am-image">
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/animals">
+            <p class="am-card-content">Panel content goes here.</p>
+          </div>
         </div>
+
+        <div class="col-sm-12 col-md-6 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/nature">
+            <button class="am-button">Button</button>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/animals">
+            <button class="am-button">Button</button>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/nature">
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/animals">
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/nature">
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-3 am-panel-wrapper">
+          <div class="am-panel white">
+            <h5 class="am-card-title">Panel Title</h5>
+            <img src="https://placeimg.com/450/300/animals">
+          </div>
+        </div>
+
+        <div class="col-sm-12" style="height:3rem"></div>
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <p>Panels with only text.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <p>Panels with only text.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <p>Panels with only text.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <p>Panels with only text.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <p>Panels with only text.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-4 am-panel-wrapper">
+          <div class="am-panel white">
+            <p>Panels with only text.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <p class="col-12 m-bottom-30">To use panels, start by adding the class <code>.am-panel-wrapper</code> to the Bootstrap grid class. Inside that grid element, add the class <code>.am-panel</code> to activate a panel. You can also specify the background color by adding a class such as <code>.white</code>. To add titles and content to the panel, add the respective classes <code>.am-card-title</code> and <code>.am-card-content</code>.</p>
+      <div class="col-sm-12">
+      <p style="margin-bottom:0.5rem;">Code</p>
+      <pre class="code-highlight"><code>&lt;div class="row"&gt;
+  &lt;div class="col-sm-12 col-md-4 am-panel-wrapper"&gt;
+    &lt;div class="am-panel white"&gt;
+      &lt;h5 class="am-card-title"&gt;Card Title&lt;/h5&gt;
+      &lt;img src="https://placeimg.com/450/300/animals"&gt;
+      &lt;p class="am-card-content"&gt;Card content goes here.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;div&gt;
+</code></pre>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Images Documentation -->
+  <div class="container">
+    <h1 class="">Images</h1>
+    <p class="m-bottom-60">Abstrakt Matarial adds styles to images which do not adversely interact with Bootstrap 4 native image styles. Essentially, the only style change that occurs is the addition of an abstract style of shadow below the image.</p>
+
+    <div class="row m-bottom-60">
+      <div class="col-sm-12 col-md-4">
+        <img src="http://via.placeholder.com/450x300" class="am-image">
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <img src="https://placeimg.com/450/300/nature" class="am-image">
+      </div>
+
+      <div class="col-sm-12 col-md-4">
+        <img src="https://placeimg.com/450/300/animals" class="am-image">
       </div>
     </div>
 
-    <div class="container-fluid" style="background: #f7f7f7;">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-md-4 am-panel-wrapper">
-            <div class="am-panel white">
-              <p>test</p>
-            </div>
-          </div>
-
-        </div>
+    <div class="row">
+      <p class="col-12 m-bottom-30">To use use Abstrakt Material image styling simply add the class <code>.am-image</code>. Note, although the Bootstrap class <code>.img-thumbnail</code> will work with Abstrakt Material image styles, the look is not optimal.</p>
+      <div class="col-sm-12">
+      <p style="margin-bottom:0.5rem;">Code</p>
+      <pre class="code-highlight"><code>&lt;div class="col-sm-12 col-md-4"&gt;
+  &lt;img src="https://placeimg.com/450/300/animals" class="am-image"&gt;
+&lt;div&gt;
+</code></pre>
       </div>
-    </div>
 
-    <div class="container">
+    </div>
+  </div>
+
+
+  <!-- Text Content -->
+  <div class="container">
+    <h1 class="">Text Content</h1>
+      <p class="">Text content in Abstrakt Material uses the default Bootstrap 4 styles. This can easily be overwritten, however consider the sizing and alignments may be adversely affected.</p>
+
       <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy <code>this is inline code</code> direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
       <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
-      <p>Thundercats disrupt williamsburg palo santo. Succulents sustainable pop-up artisan locavore la croix kitsch butcher seitan flexitarian. Cornhole salvia artisan sustainable, chia hot chicken biodiesel cronut crucifix tumeric authentic keytar fingerstache pok pok sartorial. Small batch biodiesel prism, meditation deep v yr master cleanse pitchfork messenger bag disrupt organic. Tbh hot chicken bushwick pabst intelligentsia poke asymmetrical. Narwhal cronut bitters live-edge freegan vaporware banh mi. Taiyaki single-origin coffee cred skateboard waistcoat roof party 90's ramps occupy mlkshk. Franzen organic 8-bit austin. Retro roof party humblebrag disrupt. Roof party tbh fingerstache chambray seitan. Mlkshk cray irony banh mi, put a bird on it tote bag godard celiac. Hella PBR&B before they sold out, salvia pabst selvage hoodie meh pinterest portland beard seitan jianbing williamsburg. Small batch lo-fi crucifix hashtag organic chicharrones artisan farm-to-table art party venmo gastropub. Farm-to-table echo park brooklyn PBR&B, polaroid truffaut sustainable cardigan vice gochujang four loko kickstarter church-key food truck marfa. Sustainable tbh food truck cred snackwave pork belly iceland before they sold out pug. Leggings try-hard portland trust fund tbh williamsburg heirloom ramps authentic kombucha etsy direct trade shoreditch. Vegan glossier freegan kale chips franzen adaptogen locavore raclette food truck mumblecore.</p>
-    </div>
+  </div>
 
 
 
